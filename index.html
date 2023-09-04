@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Election System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Election System</h1>
+    </header>
+    <main>
+        <section id="registerVoter">
+            <h2>Register Voter</h2>
+            <form id="registerVoterForm">
+                <input type="text" id="voterAddress" placeholder="Voter Address" required>
+                <label for="isResident">Is Resident?</label>
+                <input type="checkbox" id="isResident">
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="number" id="voterID" placeholder="Voter ID" required>
+                <button type="submit">Register Voter</button>
+            </form>
+        </section>
+
+        <section id="addCandidate">
+            <h2>Add Candidate</h2>
+            <form id="addCandidateForm">
+                <input type="number" id="candidateNumber" placeholder="Candidate Number" required>
+                <input type="text" id="candidateName" placeholder="Candidate Name" required>
+                <input type="text" id="partyAffiliation" placeholder="Party Affiliation" required>
+                <input type="number" id="constituency" placeholder="Constituency" required>
+                <button type="submit">Add Candidate</button>
+            </form>
+        </section>
+
+        <section id="castVote">
+            <h2>Cast Vote</h2>
+            <form id="castVoteForm">
+                <input type="number" id="voteCandidate" placeholder="Candidate Number" required>
+                <button type="submit">Cast Vote</button>
+            </form>
+        </section>
+
+        <section id="getResults">
+            <h2>Election Results</h2>
+            <button id="getResultsButton">Get Results</button>
+            <p id="results"></p>
+        </section>
+    </main>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
