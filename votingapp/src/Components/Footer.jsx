@@ -143,7 +143,7 @@ const Footer = () => {
               className="text-blueGray-500 hover:text-gray-800"
               target="_blank"
             >
-             VoteChain
+             CraftlyWeb
             </a>
            
           </div>
